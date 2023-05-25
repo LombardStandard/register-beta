@@ -1,1 +1,105 @@
-hello
+<!DOCTYPE html>
+<html lang="en-gb">
+   <head>
+      <meta charset="utf-8" />
+      <title>LombardGPT</title>
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="description" content="LombardGPT tracks real estate investors and ranks potential transactions.">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#1D4ED8" />
+      <meta name="msapplication-TileColor" content="#1d4ed8" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+      <link rel="stylesheet" href="css/global.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header class="max-w-4xl md:gap-6 md:grid md:grid-cols-12 mx-auto px-8">
+         <div class="col-end-12 col-start-1 md:pb-24 md:pt-48 md:space-y-12 py-20 space-y-6">
+         <img alt="LombardGPT" class="w-60 mb-12" src="img/lombardgpt.svg#logo"> 
+         <div class="sm:grid sm:grid-cols-2 sm:gap-16">
+            <div>
+               <h1 class="mb-12 font-extrabold tracking-tight text-3xl">Sign up for early access to LombardGPT.</h1>
+               <p class="text-base leading-1">LombardGPT helps Commercial Real Estate sellers and brokers make informed decisions faster. Using Artificial Intelligence trained on buyer's data across mulitple markets, LombardGPT tracks investors acvitity and ranks buyer's sentiment. Teams with LombardGPT spend less time looking for answers and more time closing business.
+                  Learn more about LombardGPT and find out if we're a good fit for your business.
+               </p>
+            </div>
+            <div>
+               <form>
+                  <div class="bg-gray-100 rounded-lg p-8 mt-12 sm:mt-0">
+                     <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
+                        <div class="mb-6 ">
+                           <label for="first-name" class="block mb-2 text-sm font-medium">First Name <span class="text-red-500">*</span></label>
+                           <input type="text" id="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        </div>
+                        <div class="mb-6">
+                           <label for="last-name" class="block mb-2 text-sm font-medium">Last Name <span class="text-red-500">*</span></label>
+                           <input type="text" id="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        </div>
+                     </div>
+                     <div class="mb-6">
+                        <label for="work-email" class="block mb-2 text-sm font-medium">Work email <span class="text-red-500">*</span></label>
+                        <input type="email" id="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                     </div>
+                     <div class="mb-6">
+                        <label for="text" class="block mb-2 text-sm font-medium">Job Title</label>
+                        <input type="job-title" id="job-title" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
+                     </div>
+                     <div class="mb-6">
+                        <label for="company-name" class="block mb-2 text-sm font-medium">Company Name</label>
+                        <input type="text" id="company-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
+                     </div>
+                     <div class="mb-6">
+                        <label for="country" class="block mb-2 text-sm font-medium">Country</label>
+                        <select id="country" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2">
+                           <option selected></option>
+                           <option value="Australia">Australia</option>
+                           <option value="Austria">Austria</option>
+                           <option value="Belgium"> Belgium </option>
+                           <option value="Canada">Canada</option>
+                           <option value="China">China</option>
+                           <option value="Denmark"> Denmark </option>
+                           <option value="Finland"> Finland </option>
+                           <option value="France">France</option>
+                           <option value="Germany">Germany</option>
+                           <option value="Hong Kong"> Hong Kong </option>
+                           <option value="Hungary"> Hungary </option>
+                           <option value="Indonesia"> Indonesia </option>
+                           <option value="Ireland"> Ireland </option>
+                           <option value="Italy">Italy</option>
+                           <option value="Japan">Japan</option>
+                           <option value="Malaysia"> Malaysia </option>
+                           <option value="Netherlands"> Netherlands </option>
+                           <option value="New Zealand">New Zealand</option>
+                           <option value="Norway"> Norway </option>
+                           <option value="Poland"> Poland </option>
+                           <option value="Portugal"> Portugal </option>
+                           <option value="Singapore"> Singapore </option>
+                           <option value="South Africa">South Africa</option>
+                           <option value="South Korea">South Korea</option>
+                           <option value="Spain">Spain</option>
+                           <option value="Sweden">Sweden</option>
+                           <option value="Switzerland">Switzerland</option>
+                           <option value="Taiwan"> Taiwan </option>
+                           <option value="Thailand">Thailand</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="United States">United States</option>
+                        </select>
+                     </div>
+                     <button type="submit" class="text-white bg-blue-700 duration-250 ease-out font-medium hover:bg-blue-800 inline-flex items-center justify-between md:text-lg px-5 py-3 rounded-md text-base transition-colors mt-6">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </header>
+      <footer class="max-w-4xl md:gap-6 mx-auto px-8 text-base pb-20 md:pb-48 ">
+         <div class="border-t pt-8">
+            <p> Copyright &copy; <span id="date"></span> Lombard Standard K.K. <br> <a href="/terms" class="text-gray-400 hover:text-blue-700">Terms of Service</a><span class="text-gray-400">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/privacy" class="text-gray-400 hover:text-blue-700">Privacy Policy</a></a><span class="text-gray-400">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/security" class="text-gray-400 hover:text-blue-700">Security</a> </p>
+            <p class="pt-6 space-x-5 items-center"> <a href="https://aws.amazon.com"> <img alt="AWS" class="inline h-6 grayscale opacity-70" src="img/AWS.png"> </a> <a href="https://www.antler.co"> <img alt="Antler" class="inline h-4 grayscale opacity-70" src="img/Antler.png"> </a> <a href="https://openai.com"> <img alt="OpenAI" class="inline h-4 grayscale opacity-70" src="img/OpenAI.png"> </a> </p>
+         </div>
+      </footer>
+      <script src="js/script.js"></script>
+      </main>
+   </body>
+</html>
