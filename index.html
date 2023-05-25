@@ -27,7 +27,8 @@
                <div class="pt-8"> <a class="flex flex-row text-blue-700" href="https://lombardgpt.com"><img alt="" class="w-4 mr-2" src="img/arrow-left.svg#arrow-left"></img> Home</a> </div>
             </div>
             <div>
-               <form name="register" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/success">
+               <form name="register" method="POST" data-netlify="true" action="/success">
+                  <p class="hidden"><label> Don’t fill this out if you’re human: <input name="bot-field" /></label> </p>
                   <div class="bg-gray-100 rounded-lg p-8 mt-12 sm:mt-0">
                      <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
                         <div class="mb-6 ">
@@ -88,7 +89,6 @@
                            <option value="United States">United States</option>
                         </select>
                      </div>
-                     <div data-netlify-recaptcha="true"></div>
                      <button type="submit" class="text-white bg-blue-700 duration-250 ease-out font-medium hover:bg-blue-800 inline-flex items-center justify-between md:text-lg px-5 py-3 rounded-md text-base transition-colors mt-6">Submit</button>
                   </div>
                </form>
