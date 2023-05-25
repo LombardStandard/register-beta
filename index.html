@@ -32,7 +32,7 @@
                   <input type="hidden" name="form-name" value="New registration" />
                   <input type="text" value="first-name" hidden />
                   <input type="text" value="last-name" hidden />
-                  <input type="email" value="work-email" hidden />
+                  <input type="email" name="work-email" hidden />
                   <input type="text" value="job-title" hidden />
                   <input type="text" value="company-name" hidden />
                   <input type="text" value="country" hidden />
@@ -40,28 +40,28 @@
                      <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
                         <div class="mb-6 ">
                            <label for="first-name" class="block mb-2 text-sm font-medium">First Name <span class="text-red-500">*</span></label>
-                           <input type="text" value="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                           <input type="text" name="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
                         </div>
                         <div class="mb-6">
                            <label for="last-name" class="block mb-2 text-sm font-medium">Last Name <span class="text-red-500">*</span></label>
-                           <input type="text" value="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                           <input type="text" name="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
                         </div>
                      </div>
                      <div class="mb-6">
                         <label for="work-email" class="block mb-2 text-sm font-medium">Work email <span class="text-red-500">*</span></label>
-                        <input type="email" value="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        <input type="email" name="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
                      </div>
                      <div class="mb-6">
                         <label for="job-title" class="block mb-2 text-sm font-medium">Job Title</label>
-                        <input type="text" value="job-title" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
+                        <input type="text" name="job-title" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
                      </div>
                      <div class="mb-6">
                         <label for="company-name" class="block mb-2 text-sm font-medium">Company Name</label>
-                        <input type="text" value="company-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
+                        <input type="text" name="company-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
                      </div>
                      <div class="mb-6">
                         <label for="country" class="block mb-2 text-sm font-medium">Country</label>
-                        <select value="country" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2">
+                        <select name="country" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2">
                            <option selected></option>
                            <option value="Australia">Australia</option>
                            <option value="Austria">Austria</option>
