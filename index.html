@@ -125,7 +125,10 @@
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit);
-         document.querySelector("form").addEventListener("submit", reset());
+         function reset() {
+         document.getElementById("registerform").reset();
+         setTimeout(function() {reset()}, 1000);
+}
          
       </script>
       </main>
