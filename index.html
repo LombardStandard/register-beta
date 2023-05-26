@@ -38,18 +38,18 @@
                   <div class="bg-gray-100 rounded-lg p-8 mt-12 sm:mt-0">
                      <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
                         <div class="mb-6 ">
-                           <label for="first-name" class="flex flex-row  mb-2 text-sm font-medium">First Name <span class="text-red-500 ml-1">*</span></label>
+                           <label for="first-name" class="flex flex-row  mb-2 text-sm font-medium">First Name <span class="text-red-600 ml-1">*</span></label>
                            <input type="text" name="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
                         </div>
                         <div class="mb-6">
-                           <label for="last-name" class="flex flex-row mb-2 text-sm font-medium">Last Name <span class="text-red-500 ml-1">*</span></label>
+                           <label for="last-name" class="flex flex-row mb-2 text-sm font-medium">Last Name <span class="text-red-600 ml-1">*</span></label>
                            <input type="text" name="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
                         </div>
                      </div>
                      <div class="mb-6">
                         <div class="flex flex-row justify-between mb-2 items-center">
-                           <label for="work-email" class="block text-sm font-medium ">Work email <span class="text-red-500 ml-1">*</span></label>
-                           <div class="text-xs text-red-500" id="errorEmail"></div>
+                           <label for="work-email" class="block text-sm font-medium ">Work email <span class="text-red-600 ml-1">*</span></label>
+                           <div class="text-xs text-red-600" id="errorEmail"></div>
                         </div>
                         <input type="text" name="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" id="textEmail" onkeyup="validateEmail(); required">
                      </div>
@@ -123,9 +123,9 @@
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
          body: new URLSearchParams(formData).toString(),
          })
-         .then(() => alert("Thanks for your submission."))
-         .then(() => document.getElementById("registerform").reset())   
-         .then(() => document.getElementById("registerform").reset())   
+         .then(() => alert("Thanks for your submission."));
+         .then(() => document.getElementById("registerform").reset());   
+         .then(() => document.getElementById("submitButton").disabled = true);  
          .catch((error) => alert(error));
          };
          
