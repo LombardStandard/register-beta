@@ -123,10 +123,10 @@
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
          body: new URLSearchParams(formData).toString(),
          })
-         .then(() => alert("Thanks for your submission."));
-         .then(() => document.getElementById("registerform").reset());   
-         .then(() => document.getElementById("submitButton").disabled = true);  
-         .catch((error) => alert(error));
+         .then(() => alert("Thanks for your submission."))
+         .then(() => document.getElementById("registerform").reset())  
+         .then(() => document.getElementById("submitButton").disabled = true)  
+         .catch((error) => alert(error))
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit); 
