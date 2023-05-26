@@ -123,8 +123,7 @@
          })
          .then(() => alert("Thank you for your submission"))
          .catch((error) => alert(error));
-         
-         setTimeout(function() {resetform.reset()}, 500);   
+         .resetform.reset()  
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit);
