@@ -114,7 +114,8 @@
          
          const registerform = event.target;
          const formData = new FormData(registerform);
-         
+         const resetform = document.getElementById("registerform");
+            
          fetch("/", {
          method: "POST",
          headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -122,14 +123,11 @@
          })
          .then(() => alert("Thank you for your submission"))
          .catch((error) => alert(error));
+         
+         setTimeout(function() {resetform.reset()}, 500);   
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit);
-         function reset() {
-         document.getElementById("registerform").reset();
-         setTimeout(function() {reset()}, 500);
-         }
-}
          
       </script>
       </main>
