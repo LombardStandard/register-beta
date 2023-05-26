@@ -122,12 +122,12 @@
          })
          .then(() => alert("Thank you for your submission"))
          .catch((error) => alert(error));
-         setTimeout(function(){ 
-         document.getElementById("registerform").reset();
-         }, 1000);   
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit);
+         setTimeout(function(){ 
+         document.getElementById("registerform").reset();
+         }, 1000); 
       </script>
       </main>
    </body>
