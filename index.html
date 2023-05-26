@@ -114,7 +114,6 @@
          
          const registerform = event.target;
          const formData = new FormData(registerform);
-         const resetform = document.getElementById("registerform");
             
          fetch("/", {
          method: "POST",
@@ -122,8 +121,8 @@
          body: new URLSearchParams(formData).toString(),
          })
          .then(() => alert("Thank you for your submission"))
+         .then(() => document.getElementById("registerform").reset())   
          .catch((error) => alert(error));
-         .resetform.reset()  
          };
          
          document.querySelector("form").addEventListener("submit", handleSubmit);
