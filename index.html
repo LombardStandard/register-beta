@@ -27,96 +27,98 @@
    <body>
       <header class="max-w-4xl md:gap-6 md:grid md:grid-cols-12 mx-auto px-8">
          <div class="col-end-12 col-start-1 md:pb-24 md:pt-48 md:space-y-18 py-20 space-y-12">
-            <div class="flex flex-row justify-between items-center">
-               <img alt="LombardGPT" class="w-48" src="img/lombardgpt.svg#logo">
-               <div>
-                  <select id="langSelector" name="lang" class="appearance-none inline-flex w-fit px-3 py-2 text-xs rounded-md border bg-white hover:text-blue-700 transition-colors duration-250 ease-out cursor-pointer focus:outline-none">
-                     <option value="en">English</option>
-                     <option value="ja">日本語</option>
-                  </select>
-               </div>
+         <div class="flex flex-row justify-between items-center">
+            <img alt="LombardGPT" class="w-48" src="img/lombardgpt.svg#logo">
+            <div>
+               <select id="langSelector" name="lang" class="appearance-none inline-flex w-fit px-3 py-2 text-xs rounded-md border bg-white hover:text-blue-700 transition-colors duration-250 ease-out cursor-pointer focus:outline-none">
+                  <option value="en">English</option>
+                  <option value="ja">日本語</option>
+               </select>
             </div>
-            <h1 class="mb-12 font-bold tracking-tight text-3xl">Sign up for early access to LombardGPT.</h1>
-            <p class="text-base">LombardGPT helps Commercial Real Estate sellers and brokers make informed decisions faster. Using Artificial Intelligence trained on buyer's data across multiple markets, LombardGPT tracks investors activity and ranks buyer's sentiment. Teams with LombardGPT spend less time looking for answers and more time closing business. Learn more about LombardGPT and find out if we're a good fit for your business.</p>
-            <div class="pt-8"> <a class="flex flex-row text-blue-700" href="https://lombardgpt.com"><img alt="" class="w-4 mr-2" src="img/arrow-left.svg#arrow-left"></img> Home</a> </div>
          </div>
-         <div>
-            <form name="New registration" method="POST" id="registerform" data-netlify="true" netlify-honeypot="bot-field">
-               <p class="hidden"><label> Don’t fill this out if you’re human: <input name="bot-field" /></label> </p>
-               <input type="hidden" name="form-name" value="New registration" />
-               <input type="text" value="last-name" hidden />
-               <input type="text" value="first-name" hidden />
-               <input type="text" value="work-email" hidden />
-               <input type="text" value="job-title" hidden />
-               <input type="text" value="company-name" hidden />
-               <input type="text" value="country" hidden />
-               <div class="bg-gray-100 rounded-lg p-8 mt-12 sm:mt-0">
-                  <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
-                     <div class="mb-6 ">
-                        <label for="first-name" class="flex flex-row  mb-2 text-sm font-medium">First Name <span class="text-red-600 ml-1">*</span></label>
-                        <input type="text" name="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+         <div class="sm:grid sm:grid-cols-2 sm:gap-16">
+            <div>
+               <h1 class="mb-12 font-bold tracking-tight text-3xl">Sign up for early access to LombardGPT.</h1>
+               <p class="text-base">LombardGPT helps Commercial Real Estate sellers and brokers make informed decisions faster. Using Artificial Intelligence trained on buyer's data across multiple markets, LombardGPT tracks investors activity and ranks buyer's sentiment. Teams with LombardGPT spend less time looking for answers and more time closing business. Learn more about LombardGPT and find out if we're a good fit for your business.</p>
+               <div class="pt-8"> <a class="flex flex-row text-blue-700" href="https://lombardgpt.com"><img alt="" class="w-4 mr-2" src="img/arrow-left.svg#arrow-left"></img> Home</a> </div>
+            </div>
+            <div>
+               <form name="New registration" method="POST" id="registerform" data-netlify="true" netlify-honeypot="bot-field">
+                  <p class="hidden"><label> Don’t fill this out if you’re human: <input name="bot-field" /></label> </p>
+                  <input type="hidden" name="form-name" value="New registration" />
+                  <input type="text" value="last-name" hidden />
+                  <input type="text" value="first-name" hidden />
+                  <input type="text" value="work-email" hidden />
+                  <input type="text" value="job-title" hidden />
+                  <input type="text" value="company-name" hidden />
+                  <input type="text" value="country" hidden />
+                  <div class="bg-gray-100 rounded-lg p-8 mt-12 sm:mt-0">
+                     <div class="flex md:flex-row flex-col md:justify-between md:space-x-4">
+                        <div class="mb-6 ">
+                           <label for="first-name" class="flex flex-row  mb-2 text-sm font-medium">First Name <span class="text-red-600 ml-1">*</span></label>
+                           <input type="text" name="first-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        </div>
+                        <div class="mb-6">
+                           <label for="last-name" class="flex flex-row mb-2 text-sm font-medium">Last Name <span class="text-red-600 ml-1">*</span></label>
+                           <input type="text" name="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        </div>
                      </div>
                      <div class="mb-6">
-                        <label for="last-name" class="flex flex-row mb-2 text-sm font-medium">Last Name <span class="text-red-600 ml-1">*</span></label>
-                        <input type="text" name="last-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" required>
+                        <div class="flex flex-row justify-between mb-2 items-center">
+                           <label for="work-email" class="block text-sm font-medium ">Work email <span class="text-red-600 ml-1">*</span></label>
+                           <div class="text-xs text-red-600" id="errorEmail"></div>
+                        </div>
+                        <input type="text" name="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" id="textEmail" onkeyup="validateEmail(); required">
                      </div>
-                  </div>
-                  <div class="mb-6">
-                     <div class="flex flex-row justify-between mb-2 items-center">
-                        <label for="work-email" class="block text-sm font-medium ">Work email <span class="text-red-600 ml-1">*</span></label>
-                        <div class="text-xs text-red-600" id="errorEmail"></div>
+                     <div class="mb-6">
+                        <label for="job-title" class="block mb-2 text-sm font-medium">Job Title</label>
+                        <input type="text" name="job-title" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
                      </div>
-                     <input type="text" name="work-email" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="" id="textEmail" onkeyup="validateEmail(); required">
+                     <div class="mb-6">
+                        <label for="company-name" class="block mb-2 text-sm font-medium">Company Name</label>
+                        <input type="text" name="company-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
+                     </div>
+                     <div class="mb-6">
+                        <label for="country" class="block mb-2 text-sm font-medium">Country</label>
+                        <select name="country" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2">
+                           <option selected></option>
+                           <option value="Australia">Australia</option>
+                           <option value="Austria">Austria</option>
+                           <option value="Belgium"> Belgium </option>
+                           <option value="Canada">Canada</option>
+                           <option value="China">China</option>
+                           <option value="Denmark"> Denmark </option>
+                           <option value="Finland"> Finland </option>
+                           <option value="France">France</option>
+                           <option value="Germany">Germany</option>
+                           <option value="Hong Kong"> Hong Kong </option>
+                           <option value="Hungary"> Hungary </option>
+                           <option value="Indonesia"> Indonesia </option>
+                           <option value="Ireland"> Ireland </option>
+                           <option value="Italy">Italy</option>
+                           <option value="Japan">Japan</option>
+                           <option value="Malaysia"> Malaysia </option>
+                           <option value="Netherlands"> Netherlands </option>
+                           <option value="New Zealand">New Zealand</option>
+                           <option value="Norway"> Norway </option>
+                           <option value="Poland"> Poland </option>
+                           <option value="Portugal"> Portugal </option>
+                           <option value="Singapore"> Singapore </option>
+                           <option value="South Africa">South Africa</option>
+                           <option value="South Korea">South Korea</option>
+                           <option value="Spain">Spain</option>
+                           <option value="Sweden">Sweden</option>
+                           <option value="Switzerland">Switzerland</option>
+                           <option value="Taiwan"> Taiwan </option>
+                           <option value="Thailand">Thailand</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="United States">United States</option>
+                        </select>
+                     </div>
+                     <button type="submit" id="submitButton" class="text-white bg-blue-700 duration-250 ease-out font-medium enabled:hover:bg-blue-800 inline-flex items-center justify-between md:text-lg px-5 py-3 rounded-md text-base transition-colors mt-6 disabled:opacity-50 disabled:cursor-not-allowed" disabled >Submit</button>
                   </div>
-                  <div class="mb-6">
-                     <label for="job-title" class="block mb-2 text-sm font-medium">Job Title</label>
-                     <input type="text" name="job-title" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
-                  </div>
-                  <div class="mb-6">
-                     <label for="company-name" class="block mb-2 text-sm font-medium">Company Name</label>
-                     <input type="text" name="company-name" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2" placeholder="">
-                  </div>
-                  <div class="mb-6">
-                     <label for="country" class="block mb-2 text-sm font-medium">Country</label>
-                     <select name="country" class="border border-gray-300 text-sm rounded-md focus:ring-blue-700 focus:border-blue-700 block w-full p-2">
-                        <option selected></option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Belgium"> Belgium </option>
-                        <option value="Canada">Canada</option>
-                        <option value="China">China</option>
-                        <option value="Denmark"> Denmark </option>
-                        <option value="Finland"> Finland </option>
-                        <option value="France">France</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Hong Kong"> Hong Kong </option>
-                        <option value="Hungary"> Hungary </option>
-                        <option value="Indonesia"> Indonesia </option>
-                        <option value="Ireland"> Ireland </option>
-                        <option value="Italy">Italy</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Malaysia"> Malaysia </option>
-                        <option value="Netherlands"> Netherlands </option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Norway"> Norway </option>
-                        <option value="Poland"> Poland </option>
-                        <option value="Portugal"> Portugal </option>
-                        <option value="Singapore"> Singapore </option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="South Korea">South Korea</option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Taiwan"> Taiwan </option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
-                     </select>
-                  </div>
-                  <button type="submit" id="submitButton" class="text-white bg-blue-700 duration-250 ease-out font-medium enabled:hover:bg-blue-800 inline-flex items-center justify-between md:text-lg px-5 py-3 rounded-md text-base transition-colors mt-6 disabled:opacity-50 disabled:cursor-not-allowed" disabled >Submit</button>
-               </div>
-            </form>
-         </div>
+               </form>
+            </div>
          </div>
       </header>
       <footer class="max-w-4xl md:gap-6 mx-auto px-8 text-base pb-20 md:pb-48 ">
