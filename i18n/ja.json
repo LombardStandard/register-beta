@@ -3,5 +3,14 @@
   "global-copyright": "© Lombard Standard株式会社 ",
   "global-terms": "利用規約",
   "global-privacy": "プライバシーポリシー",
-  "global-security": "セキュリティ対策"
+  "global-security": "セキュリティ対策",
+  "index-h1": "LombardGPT への早期アクセスにサインアップしてください。",
+  "index-body": "LombardGPT は、商業用不動産の販売者や仲介業者が情報に基づいた意思決定を迅速に行うのに役立ちます。 LombardGPT は、複数の市場にわたる買い手のデータで訓練された人工知能を使用して、投資家の活動を追跡し、買い手のセンチメントをランク付けします。 LombardGPT を使用するチームは、答えを探す時間を短縮し、ビジネスを終了する時間を増やすことができます。 LombardGPT について詳しく学び、当社があなたのビジネスに適しているかどうかを確認してください。",
+  "form-first-name": "ファーストネーム <span class='text-red-600 ml-1'>*</span>",
+  "form-last-name": "苗字 <span class='text-red-600 ml-1'>*</span>",
+  "form-work-email": "仕事用メール <span class='text-red-600 ml-1'>*</span>",
+  "form-job-title": "職名",
+  "form-company-name": "会社名",
+  "form-country": "国",
+  "form-submit-button": "送信"
 }
